@@ -1,0 +1,108 @@
+#filter-library {
+  float: right;
+  width: 200px;
+  position: relative;
+  top: 5px;
+}
+
+ul {
+  list-style:none;
+  padding-left: 0;
+  min-height: 150px;
+  border: 2px dashed #282828;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+li {
+  border-color: #282828;
+  margin-bottom: 20px;
+  background-color: #222222;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+ li:hover {
+    background-color: #3D3D3D;
+  }
+li .fa-bars {
+  margin-right: 10px;
+  cursor: move;
+}
+
+li .fa-trash {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  opacity: 0.2;
+  transition: all 0.5s;
+}
+li:hover .fa-trash {
+    opacity: 1;
+}
+li .notes {
+  margin-left: 22px;
+  margin-top: 10px;
+  display: none;
+  background-color: #444;
+  color: #999;
+  padding: 5 12px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.alert {
+  margin-top: 20px;
+  display: none;
+  text-align: center;
+}
+
+@-webkit-keyframes shake{
+      
+      0% { -webkit-transform: rotate(0deg);}
+      10% { -webkit-transform: rotate(1deg);}
+      20% { -webkit-transform: rotate(2deg);}
+      30% { -webkit-transform: rotate(3deg);}
+      40% { -webkit-transform: rotate(2deg);}
+      50% { -webkit-transform: rotate(1deg);}
+      60% { -webkit-transform: rotate(0deg);}
+      70% { -webkit-transform: rotate(-1deg);}
+      80% { -webkit-transform: rotate(-2deg);}
+      90% { -webkit-transform: rotate(-1deg);}
+      100% { -webkit-transform: rotate(0deg);}
+
+      }
+
+      a#play-button.shake {
+        -webkit-animation: shake 1s;
+      }
+
+      @-webkit-keyframes dance{
+      
+      0%  { color: white; -webkit-transform: rotate(0deg);}
+      10% { color: red; -webkit-transform: rotate(.5deg);}
+      20% { color: orange; -webkit-transform: rotate(1deg);}
+      30% { color: yellow; -webkit-transform: rotate(1.5deg);}
+      40% { color: green; -webkit-transform: rotate(1deg);}
+      50% { color: blue; -webkit-transform: rotate(.5deg);}
+      60% { color: purple; -webkit-transform: rotate(0deg);}
+      70% { color: red; -webkit-transform: rotate(-.5deg);}
+      80% { color: orange; -webkit-transform: rotate(-1deg);}
+      90% { color: yellow; -webkit-transform: rotate(-.5deg);}
+      100% { color: white; -webkit-transform: rotate(0deg);}
+
+      }
+
+      h1.dance {
+        -webkit-animation: dance 0.5s infinite;
+      }
+
+/* Add Your Styles Here */
+
+
+
+ 
